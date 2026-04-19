@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumpsum Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h2><center>Lumpsum Calculator</center></h2>
+        
+        <div class="input-group">
+            <label for="principal">Investment Amount (₹)</label>
+            <input type="text" id="principal" placeholder="e.g. 1,00,000">
+        </div>
+
+        <div class="input-group">
+            <label for="rate">Expected Returns (% per annum)</label>
+            <input type="text" id="rate" placeholder="e.g. 12">
+        </div>
+
+        <div class="input-group">
+            <label for="years">Time Period (in Years)</label>
+            <input type="text" id="years" placeholder="e.g. 10">
+        </div>
+
+        <button onclick="calculateLumpsum()">Calculate</button>
+
+        <div id="result-section" class="results" style="display:none;">
+            <p>Invested Amount: <span id="display-principal"></span></p>
+            <p>Estimated Returns: <span id="display-profit"></span></p>
+            <p><strong>Total Value: <span id="display-total"></span></strong></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
