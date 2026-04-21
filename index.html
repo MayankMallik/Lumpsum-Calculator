@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="calculator-container">
-        <h2><center>Lumpsum Calculator</center></h2>
+    <div class="calculator-card">
+        <h2>Lumpsum Calculator</h2>
         
         <div class="input-group">
             <label for="principal">Investment Amount (₹)</label>
@@ -25,12 +25,21 @@
             <input type="text" id="years" inputmode="numeric" placeholder="e.g. 10">
         </div>
 
-        <button onclick="calculateLumpsum()">Calculate</button>
+        <button onclick="calculateLumpsum()"><b>Calculate</b></button>
 
-        <div id="result-section" class="results" style="display:none;">
-            <p>Invested Amount: <span id="display-principal"></span></p>
-            <p>Estimated Returns: <span id="display-profit"></span></p>
-            <p><strong>Total Value: <span id="display-total"></span></strong></p>
+        <div class="results" id="results" style="display: none;">
+            <div class="result-item">
+                <span>Invested Amount:</span>
+                <span id="invested">₹0</span>
+            </div>
+            <div class="result-item">
+                <span>Estimated Returns:</span>
+                <span id="returns">₹0</span>
+            </div>
+            <div class="result-item total">
+                <span>Total Value:</span>
+                <span id="total">₹0</span>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
