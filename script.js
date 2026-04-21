@@ -55,9 +55,9 @@ function calculateLumpsum() {
         return integer;
     };
 
-    document.getElementById('display-principal').innerText = "₹" + formatIndian(p);
-    document.getElementById('display-profit').innerText = "₹" + formatIndian(estReturns);
-    document.getElementById('display-total').innerText = "₹" + formatIndian(totalValue);
+    document.getElementById('invested').innerText = "₹" + formatIndian(p);
+    document.getElementById('returns').innerText = "₹" + formatIndian(estReturns);
+    document.getElementById('total').innerText = "₹" + formatIndian(totalValue);
 
-    document.getElementById('result-section').style.display = 'block';
+    document.getElementById('results').style.display = 'block';
 }
