@@ -1,12 +1,12 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
     padding: 20px;
     background-color: #f4f7f6;
 }
 
-.calculator-container {
+.calculator-card {
     background: white;
     padding: 30px;
     border-radius: 8px;
@@ -14,6 +14,8 @@ body {
     max-width: 400px;
     width: 100%;
 }
+
+h2 { color: #333; margin-bottom: 20px; text-align: center; }
 
 .input-group {
     margin-bottom: 15px;
@@ -53,4 +55,18 @@ button:hover {
     margin-top: 20px;
     padding-top: 15px;
     border-top: 2px solid #eee;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.total {
+    font-weight: bold;
+    color: #28a745;
+    font-size: 18px;
+    margin-top: 15px;
 }
